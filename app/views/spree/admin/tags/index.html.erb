@@ -1,0 +1,32 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:tags) %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <%= button_link_to Spree.t(:new_tag), new_object_url, class: 'btn-success', icon: 'add', id: 'admin_new_tag_link' %>
+<% end %>
+
+<table class="table index" id='listing_tags'>
+  <thead>
+    <th><%= Spree.t(:tag_name) %></th>
+    <th><%= Spree.t(:tag_description) %></th>
+    <th><%= Spree.t(:tag_color) %></th>
+    <th><%= Spree.t(:display_tag) %></th>
+    <th data-hook="admin_tags_index_header_actions" class="actions"></th>
+  </thead>
+  <tbody>
+  <% @tags.each do |tag|%>
+    <tr id="<%= spree_dom_id tag %>"
+        data-hook="admin_tags_index_rows" class="<%= cycle('odd', 'even') %>">
+      <td><%= tag.name %></td>
+      <td><%= tag.description %></td>
+      <td><%= tag.color %></td>
+      <td><%= tag.display %></td>
+      <td data-hook="admin_tags_index_row_actions" class="actions">
+        <%= link_to_edit tag, no_text: true %> &nbsp;
+        <%= link_to_delete tag, no_text: true %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

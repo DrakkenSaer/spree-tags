@@ -1,0 +1,44 @@
+<div class="row">
+  <div data-hook="tags">
+    <div data-hook="admin_tag_form_fields" class="col-md-12">
+      <div data-hook="name">
+        <%= f.field_container :name, class: ['form-group'] do %>
+          <%= f.label :name, Spree.t(:tag_name) %><br />
+          <%= f.text_field :name, class: 'form-control' %>
+          <%= error_message_on :tag, :name %>
+        <% end %>
+      </div>
+
+      <div data-hook="description">
+        <%= f.field_container :description, class: ['form-group'] do %>
+          <%= f.label :description, Spree.t(:tag_description) %><br />
+          <%= f.text_field :description, class: 'form-control' %>
+          <%= error_message_on :tag, :description %>
+        <% end %>
+      </div>
+
+      <div data-hook="color">
+        <%= f.field_container :color, class: ['form-group'] do %>
+          <%= f.label :color, Spree.t(:tag_color) %><br />
+          <%= f.text_field :color, class: 'form-control' %>
+          <%= error_message_on :tag, :color %>
+        <% end %>
+      </div>
+
+      <div data-hook="display" class="form-group">
+        <strong><%= Spree.t(:display_tag) %></strong>
+
+        <div class="radio">
+          <%= f.label :display, Spree.t(:display_tag) do %>
+            <%= f.radio_button :display, "true" %>
+            <%= Spree.t(:say_yes) %>
+          <% end %>
+          <%= f.label :display, Spree.t(:display_tag) do %>
+            <%= f.radio_button :display, "false" %>
+            <%= Spree.t(:say_no) %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
