@@ -2,12 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  tags: "tags"
-  tag_name: "tag name"
-  tag_description: "tag description"
-  tag_color: "tag color"
-  display_tag: "show tag on page"
-  tags_admin: "administrate tags"
-  editing_tag: "editing tag"
-  new_tag: "new tag"
-  back_to_tags_list: "back to tags list"
+  spree:
+    Tags: "Tags"
+    Tag_name: "Tag name"
+    Tag_description: "Tag description"
+    Tag_color: "Tag color"
+    display_Tag: "Show Tag On Page"
+    Tags_admin: "Administrate Tags"
+    editing_Tag: "Editing Tag"
+    new_Tag: "New Tag"
+    back_to_Tags_list: "Back To Tags list"

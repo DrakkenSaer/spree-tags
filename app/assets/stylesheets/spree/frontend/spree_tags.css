@@ -9,6 +9,4 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    width: 70px;
-    text-decoration: none !important;
 }
