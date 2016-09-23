@@ -1,13 +1,13 @@
 SpreeTags
 =========
 
-Introduction goes here.
+This gem allows you to add tags to products (and other resources with some manual configuration).
 
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_tags', github: '[your-github-handle]/spree_tags', branch: 'X-X-stable'
+  gem 'spree_tags', github: 'DrakkenSaer/spree_tags', branch: '3-1-stable'
   ```
 
   The `branch` option is important: it must match the version of Spree you're using.
