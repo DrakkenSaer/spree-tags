@@ -10,3 +10,10 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
     text-transform: uppercase;
     text-align: center;
 }
+
+.tag:not(:first-of-type) {
+    margin-left: 5px;
+}
+.tag:not(:last-of-type) {
+    margin-right: 5px;
+}
