@@ -1,4 +1,4 @@
-<div class="tags col-xs-12" data-hook="show_tags_on_resource">
+<div class="tags" data-hook="show_tags_on_resource">
   <% object.tags.where(display: true).each do |tag| %>
     <span class="tag tag-<%= tag.id %>" style="background-color: <%= tag.color %>;">
         <%= tag.name %>

@@ -3,12 +3,12 @@
 
 en:
   spree:
-    Tags: "Tags"
-    Tag_name: "Tag name"
-    Tag_description: "Tag description"
-    Tag_color: "Tag color"
-    display_Tag: "Show Tag On Page"
-    Tags_admin: "Administrate Tags"
-    editing_Tag: "Editing Tag"
-    new_Tag: "New Tag"
-    back_to_Tags_list: "Back To Tags list"
+    tags: "Tags"
+    tag_name: "Tag name"
+    tag_description: "Tag description"
+    tag_color: "Tag color"
+    display_tag: "Show Tag On Page"
+    tags_admin: "Administrate Tags"
+    editing_tag: "Editing Tag"
+    new_tag: "New Tag"
+    back_to_tags_list: "Back To Tags list"
