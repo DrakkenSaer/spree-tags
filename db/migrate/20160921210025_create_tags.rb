@@ -1,6 +1,6 @@
 class CreateTags < ActiveRecord::Migration
   def change
-    create_table :tags do |t|
+    create_table :spree_tags do |t|
       t.string :name
       t.string :description
       t.string :color
