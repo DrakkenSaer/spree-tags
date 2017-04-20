@@ -1,4 +1,4 @@
 Spree::Product.class_eval do
-  has_many :identities
-  has_many :tags, through: :identities
+  has_many :taggings, as: :taggable
+  has_many :tags, -> { distinct }, through: :taggings
 end
